@@ -12,3 +12,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.featurette {
+  overflow: hidden;
+}
+
+.featurette-divider {
+  margin: 80px 0;
+}
+
+h2 {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.projectGif {
+  margin-left: 24em;
+  width: 520px;
+  height: 340px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.round {
+  border-radius: 1.875rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+
+.featurette-heading {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.testVid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.testVid video {
+  transform: translateX(50%) translateY(50%);
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  width: 0;
+  height: auto;
+  min-width: 100%;
+  min-height: 10%;
+  overflow: hidden;
+}
