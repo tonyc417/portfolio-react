@@ -1,8 +1,11 @@
 import React from 'react';
 import nodejsIcon from './images/nodejs.png';
 import javascriptLogo from './images/javascriptIcon.png';
+import skillBoot from './images/bootIcon.png';
 import htmlIcon from './images/html-icon.png';
 import reactLogo from './images/react-icon.png';
+import skillJquery from './images/jqueryLogo.jpg';
+import projectOne from './images/eventMaps.png';
 import siteBanner from './images/skyline.mp4';
 import siteVideo from './images/skyline.webm';
 import './App.css';
@@ -13,6 +16,7 @@ function App() {
       <PageHead />
       <MainContent />
       <MySkills />
+      <MyProjects />
     </div>
   )
 }
@@ -38,7 +42,7 @@ function PageHead() {
 
 function MainContent() {
   return (
-    <section className="firstPara">
+    <section className="firstPara container">
     <div className="featurette">
     <img className="featurette-image pull-left" src="" alt="" width="300px" />
     <h2 className="featurette-heading">Mariano Cruz</h2>
@@ -59,22 +63,52 @@ function MySkills() {
       <div className="row">
         <div className="col-sm">
           <p>JavaScript</p>
-          <img src={javascriptLogo} alt="logo" width="100px" />
+          <img src={javascriptLogo} alt="a javascript icon" width="100px" />
         </div>
         <div className="col-sm">
           <p>React</p>
           <img src={reactLogo} alt="a react logo" width="100px" />
         </div>
+        <div className="col-sm">
+          <p>Node.JS</p>
+          <img src={nodejsIcon} alt="a Node.JS logo" width="100px" />
+        </div>
+        <div className="col-sm">
+          <p>JQuery</p>
+          <img src={skillJquery} alt="a JQuery icon" width="100px" />
+        </div>
+        <div className="col-sm">
+          <p>HTML5</p>
+          <img src={htmlIcon} alt="a HTML logo" width="100px" />
+        </div>
+        <div className="col-sm">
+          <p>Bootstrap</p>
+          <img src={skillBoot} alt="a bootstrap logo" width="100px" />
+        </div>
       </div>
+      <hr className="featurette-divider" />
     </div>
   )
 }
 
 function MyProjects() {
   return (
-    <div>
-      <h2>Projects</h2>
+    <section className="thirdPara">
+    <div className="featurette">
+      <h2 className="featurette-heading text-center">Projects</h2>
     </div>
+    <div>
+      <div className="row">
+        <div className="col-sm">
+          <img className="projectGif" src={projectOne} alt="a screenshot of my first project" />
+        </div>
+        <div className="col-sm">
+          <h4>Event Maps</h4>
+          <p>This application allows you to search for events in what ever city you decide to search in.</p>
+        </div>
+      </div>
+    </div>
+    </section>
   )
 }
 
